@@ -51,6 +51,19 @@ You can also search for a specific rune by its name:
 
 Name searches are case-insensitive and support partial matching.
 
+### Search by Symbol
+
+You can paste a UTF-8 runic symbol directly to look up its name and meaning:
+
+```bash
+./runes ᚠ
+./runes ᛉ
+./runes ᛞ
+./runes ᚹ
+```
+
+This is useful when you encounter a rune symbol and want to identify it.
+
 ## The 24 Elder Futhark Runes
 
 ### Freya's Aett

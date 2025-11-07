@@ -213,27 +213,35 @@ func displayAllRunes() {
 		fmt.Println("│")
 	}
 	fmt.Println("└────────────────────────────────────────────────────────────────────\n")
-	fmt.Println("Usage: runes [keyword|rune-name]")
+	fmt.Println("Usage: runes [keyword|rune-name|symbol]")
 	fmt.Println("Examples: runes love")
 	fmt.Println("          runes fehu")
+	fmt.Println("          runes ᚠ")
 	fmt.Println()
 }
 
-// searchRunes searches for runes matching the given keyword or rune name
+// searchRunes searches for runes matching the given keyword, rune name, or symbol
 func searchRunes(keyword string) {
-	keyword = strings.ToLower(strings.TrimSpace(keyword))
+	keyword = strings.TrimSpace(keyword)
+	keywordLower := strings.ToLower(keyword)
 	var matches []Rune
 
 	for _, rune := range getAllRunes() {
+		// Check if keyword matches the rune symbol (exact match)
+		if rune.Symbol == keyword {
+			matches = append(matches, rune)
+			continue
+		}
+
 		// Check if keyword matches the rune name
-		if strings.EqualFold(rune.Name, keyword) || strings.Contains(strings.ToLower(rune.Name), keyword) {
+		if strings.EqualFold(rune.Name, keyword) || strings.Contains(strings.ToLower(rune.Name), keywordLower) {
 			matches = append(matches, rune)
 			continue
 		}
 
 		// Check if keyword matches any of the rune's keywords
 		for _, kw := range rune.Keywords {
-			if strings.Contains(kw, keyword) || strings.Contains(keyword, kw) {
+			if strings.Contains(kw, keywordLower) || strings.Contains(keywordLower, kw) {
 				matches = append(matches, rune)
 				break
 			}
@@ -244,6 +252,7 @@ func searchRunes(keyword string) {
 		fmt.Printf("\nNo runes found matching '%s'\n", keyword)
 		fmt.Println("\nTry keywords like: love, wealth, strength, protection, journey, wisdom, etc.")
 		fmt.Println("Or search by rune name: fehu, uruz, thurisaz, ansuz, etc.")
+		fmt.Println("Or search by symbol: ᚠ, ᚢ, ᚦ, etc.")
 		fmt.Println("Or run 'runes' without arguments to see all runes.\n")
 		return
 	}
