@@ -67,34 +67,34 @@ This is useful when you encounter a rune symbol and want to identify it.
 ## The 24 Elder Futhark Runes
 
 ### Freya's Aett
-- ᚠ **Fehu** - Wealth, Prosperity
-- ᚢ **Uruz** - Strength, Vitality
-- ᚦ **Thurisaz** - Chaos, Defense
-- ᚨ **Ansuz** - Communication, Wisdom
-- ᚱ **Raidho** - Journey, Travel
-- ᚲ **Kenaz** - Knowledge, Enlightenment
-- ᚷ **Gebo** - Gift, Partnership, Love
-- ᚹ **Wunjo** - Joy, Harmony
+- ᚠ **Fehu** (FAY-hoo) - Wealth, Prosperity, Abundance, Cattle, New Beginnings
+- ᚢ **Uruz** (OO-rooz) - Strength, Vitality, Physical Health, Primal Power, Wild Ox
+- ᚦ **Thurisaz** (THOOR-ee-saz) - Protection, Defense, Giants, Thorns, Reactive Force
+- ᚨ **Ansuz** (AHN-sooz) - Communication, Wisdom, Divine Inspiration, Signals, Odin
+- ᚱ **Raidho** (RYE-though) - Journey, Travel, Movement, Rhythm, Right Action
+- ᚲ **Kenaz** (KEN-az) - Knowledge, Torch, Light, Creativity, Transformation
+- ᚷ **Gebo** (GEH-bow) - Gift, Generosity, Partnership, Love, Balance
+- ᚹ **Wunjo** (WOO-nyo) - Joy, Happiness, Harmony, Peace, Fellowship
 
 ### Heimdall's Aett
-- ᚺ **Hagalaz** - Disruption, Change
-- ᚾ **Nauthiz** - Need, Necessity
-- ᛁ **Isa** - Ice, Stillness
-- ᛃ **Jera** - Harvest, Cycles
-- ᛇ **Eihwaz** - Endurance, Defense
-- ᛈ **Perthro** - Fate, Mystery
-- ᛉ **Algiz** - Protection, Sanctuary
-- ᛊ **Sowilo** - Sun, Success
+- ᚺ **Hagalaz** (HAH-gah-laz) - Hail, Disruption, Natural Forces, Change, Uncontrolled
+- ᚾ **Nauthiz** (NOW-theez) - Need, Necessity, Resistance, Constraint, Endurance
+- ᛁ **Isa** (EE-sah) - Ice, Stillness, Stagnation, Clarity, Focus
+- ᛃ **Jera** (YEH-rah) - Year, Harvest, Cycles, Rewards, Natural Timing
+- ᛇ **Eihwaz** (AY-waz) - Yew Tree, Defense, Endurance, Reliability, Strength
+- ᛈ **Perthro** (PER-throw) - Mystery, Fate, Secrets, Hidden Knowledge, Chance
+- ᛉ **Algiz** (AL-geez) - Protection, Shield, Higher Self, Connection to Divine
+- ᛋ **Sowilo** (SO-wee-lo) - Sun, Success, Wholeness, Life Force, Victory
 
 ### Tyr's Aett
-- ᛏ **Tiwaz** - Justice, Honor
-- ᛒ **Berkano** - Growth, Fertility
-- ᛖ **Ehwaz** - Movement, Partnership
-- ᛗ **Mannaz** - Humanity, Self
-- ᛚ **Laguz** - Water, Intuition
-- ᛜ **Ingwaz** - Fertility, Completion
-- ᛞ **Dagaz** - Awakening, Breakthrough
-- ᛟ **Othala** - Heritage, Home
+- ᛏ **Tiwaz** (TEE-waz) - Warrior, Justice, Honor, Victory, Tyr the God
+- ᛒ **Berkano** (BER-kah-no) - Birch, Growth, Renewal, Fertility, New Beginnings
+- ᛖ **Ehwaz** (EH-waz) - Horse, Movement, Progress, Trust, Partnership
+- ᛗ **Mannaz** (MAH-naz) - Humanity, Self, Community, Intelligence, Rationality
+- ᛚ **Laguz** (LAH-gooz) - Water, Flow, Emotions, Intuition, Dreams
+- ᛜ **Ingwaz** (ING-waz) - Fertility, Potential, Internal Growth, Ing the God
+- ᛞ **Dagaz** (DAH-gaz) - Day, Dawn, Breakthrough, Awakening, Transformation
+- ᛟ **Othala** (OH-thah-lah) - Heritage, Home, Ancestral Property, Legacy, Inheritance
 
 ## Example Searches
 

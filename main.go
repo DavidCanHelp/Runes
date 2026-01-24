@@ -8,10 +8,11 @@ import (
 
 // Rune represents an Elder Futhark rune
 type Rune struct {
-	Symbol   string
-	Name     string
-	Meaning  string
-	Keywords []string
+	Symbol        string
+	Name          string
+	Pronunciation string
+	Meaning       string
+	Keywords      []string
 }
 
 // Aett represents a group of 8 runes
@@ -26,52 +27,60 @@ var (
 		Name: "Freya's Aett (Fertility and Creation)",
 		Runes: []Rune{
 			{
-				Symbol:   "ᚠ",
-				Name:     "Fehu",
-				Meaning:  "Cattle, Wealth, Prosperity",
-				Keywords: []string{"wealth", "prosperity", "abundance", "cattle", "money", "success", "fortune"},
+				Symbol:        "ᚠ",
+				Name:          "Fehu",
+				Pronunciation: "FAY-hoo",
+				Meaning:       "Wealth, Prosperity, Abundance, Cattle, New Beginnings",
+				Keywords:      []string{"wealth", "prosperity", "abundance", "cattle", "new beginnings", "money", "success", "fortune"},
 			},
 			{
-				Symbol:   "ᚢ",
-				Name:     "Uruz",
-				Meaning:  "Aurochs, Strength, Wild Ox",
-				Keywords: []string{"strength", "power", "vitality", "health", "energy", "endurance", "ox"},
+				Symbol:        "ᚢ",
+				Name:          "Uruz",
+				Pronunciation: "OO-rooz",
+				Meaning:       "Strength, Vitality, Physical Health, Primal Power, Wild Ox",
+				Keywords:      []string{"strength", "vitality", "physical health", "primal power", "wild ox", "energy", "endurance"},
 			},
 			{
-				Symbol:   "ᚦ",
-				Name:     "Thurisaz",
-				Meaning:  "Giant, Thorn, Chaos",
-				Keywords: []string{"chaos", "destruction", "giant", "thorn", "conflict", "challenge", "defense"},
+				Symbol:        "ᚦ",
+				Name:          "Thurisaz",
+				Pronunciation: "THOOR-ee-saz",
+				Meaning:       "Protection, Defense, Giants, Thorns, Reactive Force",
+				Keywords:      []string{"protection", "defense", "giants", "thorns", "reactive force", "thorn", "challenge"},
 			},
 			{
-				Symbol:   "ᚨ",
-				Name:     "Ansuz",
-				Meaning:  "God, Communication, Divine Inspiration",
-				Keywords: []string{"communication", "wisdom", "inspiration", "god", "odin", "speech", "divination"},
+				Symbol:        "ᚨ",
+				Name:          "Ansuz",
+				Pronunciation: "AHN-sooz",
+				Meaning:       "Communication, Wisdom, Divine Inspiration, Signals, Odin",
+				Keywords:      []string{"communication", "wisdom", "divine inspiration", "signals", "odin", "speech", "god"},
 			},
 			{
-				Symbol:   "ᚱ",
-				Name:     "Raidho",
-				Meaning:  "Journey, Wagon, Travel",
-				Keywords: []string{"journey", "travel", "movement", "progress", "wagon", "quest", "path"},
+				Symbol:        "ᚱ",
+				Name:          "Raidho",
+				Pronunciation: "RYE-though",
+				Meaning:       "Journey, Travel, Movement, Rhythm, Right Action",
+				Keywords:      []string{"journey", "travel", "movement", "rhythm", "right action", "progress", "path"},
 			},
 			{
-				Symbol:   "ᚲ",
-				Name:     "Kenaz",
-				Meaning:  "Torch, Knowledge, Enlightenment",
-				Keywords: []string{"knowledge", "enlightenment", "torch", "creativity", "learning", "fire", "illumination"},
+				Symbol:        "ᚲ",
+				Name:          "Kenaz",
+				Pronunciation: "KEN-az",
+				Meaning:       "Knowledge, Torch, Light, Creativity, Transformation",
+				Keywords:      []string{"knowledge", "torch", "light", "creativity", "transformation", "enlightenment", "fire"},
 			},
 			{
-				Symbol:   "ᚷ",
-				Name:     "Gebo",
-				Meaning:  "Gift, Partnership, Exchange",
-				Keywords: []string{"gift", "partnership", "love", "generosity", "exchange", "relationship", "balance"},
+				Symbol:        "ᚷ",
+				Name:          "Gebo",
+				Pronunciation: "GEH-bow",
+				Meaning:       "Gift, Generosity, Partnership, Love, Balance",
+				Keywords:      []string{"gift", "generosity", "partnership", "love", "balance", "exchange", "relationship"},
 			},
 			{
-				Symbol:   "ᚹ",
-				Name:     "Wunjo",
-				Meaning:  "Joy, Pleasure, Harmony",
-				Keywords: []string{"joy", "happiness", "harmony", "pleasure", "peace", "contentment", "bliss"},
+				Symbol:        "ᚹ",
+				Name:          "Wunjo",
+				Pronunciation: "WOO-nyo",
+				Meaning:       "Joy, Happiness, Harmony, Peace, Fellowship",
+				Keywords:      []string{"joy", "happiness", "harmony", "peace", "fellowship", "contentment", "bliss"},
 			},
 		},
 	}
@@ -81,52 +90,60 @@ var (
 		Name: "Heimdall's Aett (Protection and Challenges)",
 		Runes: []Rune{
 			{
-				Symbol:   "ᚺ",
-				Name:     "Hagalaz",
-				Meaning:  "Hail, Disruption, Uncontrolled Forces",
-				Keywords: []string{"hail", "disruption", "destruction", "crisis", "change", "uncontrolled", "storm"},
+				Symbol:        "ᚺ",
+				Name:          "Hagalaz",
+				Pronunciation: "HAH-gah-laz",
+				Meaning:       "Hail, Disruption, Natural Forces, Change, Uncontrolled",
+				Keywords:      []string{"hail", "disruption", "natural forces", "change", "uncontrolled", "crisis", "storm"},
 			},
 			{
-				Symbol:   "ᚾ",
-				Name:     "Nauthiz",
-				Meaning:  "Need, Necessity, Constraint",
-				Keywords: []string{"need", "necessity", "constraint", "hardship", "resistance", "requirement", "survival"},
+				Symbol:        "ᚾ",
+				Name:          "Nauthiz",
+				Pronunciation: "NOW-theez",
+				Meaning:       "Need, Necessity, Resistance, Constraint, Endurance",
+				Keywords:      []string{"need", "necessity", "resistance", "constraint", "endurance", "hardship", "survival"},
 			},
 			{
-				Symbol:   "ᛁ",
-				Name:     "Isa",
-				Meaning:  "Ice, Stillness, Stagnation",
-				Keywords: []string{"ice", "stillness", "stagnation", "standstill", "patience", "frozen", "waiting"},
+				Symbol:        "ᛁ",
+				Name:          "Isa",
+				Pronunciation: "EE-sah",
+				Meaning:       "Ice, Stillness, Stagnation, Clarity, Focus",
+				Keywords:      []string{"ice", "stillness", "stagnation", "clarity", "focus", "patience", "frozen"},
 			},
 			{
-				Symbol:   "ᛃ",
-				Name:     "Jera",
-				Meaning:  "Year, Harvest, Cycles",
-				Keywords: []string{"harvest", "year", "cycle", "reward", "season", "patience", "growth"},
+				Symbol:        "ᛃ",
+				Name:          "Jera",
+				Pronunciation: "YEH-rah",
+				Meaning:       "Year, Harvest, Cycles, Rewards, Natural Timing",
+				Keywords:      []string{"year", "harvest", "cycles", "rewards", "natural timing", "season", "patience"},
 			},
 			{
-				Symbol:   "ᛇ",
-				Name:     "Eihwaz",
-				Meaning:  "Yew Tree, Endurance, Defense",
-				Keywords: []string{"endurance", "defense", "yew", "protection", "reliability", "death", "rebirth"},
+				Symbol:        "ᛇ",
+				Name:          "Eihwaz",
+				Pronunciation: "AY-waz",
+				Meaning:       "Yew Tree, Defense, Endurance, Reliability, Strength",
+				Keywords:      []string{"yew tree", "defense", "endurance", "reliability", "strength", "protection", "rebirth"},
 			},
 			{
-				Symbol:   "ᛈ",
-				Name:     "Perthro",
-				Meaning:  "Fate, Mystery, Secrets",
-				Keywords: []string{"fate", "mystery", "secrets", "chance", "divination", "hidden", "luck"},
+				Symbol:        "ᛈ",
+				Name:          "Perthro",
+				Pronunciation: "PER-throw",
+				Meaning:       "Mystery, Fate, Secrets, Hidden Knowledge, Chance",
+				Keywords:      []string{"mystery", "fate", "secrets", "hidden knowledge", "chance", "divination", "luck"},
 			},
 			{
-				Symbol:   "ᛉ",
-				Name:     "Algiz",
-				Meaning:  "Elk, Protection, Sanctuary",
-				Keywords: []string{"protection", "defense", "sanctuary", "elk", "shield", "guardian", "safety"},
+				Symbol:        "ᛉ",
+				Name:          "Algiz",
+				Pronunciation: "AL-geez",
+				Meaning:       "Protection, Shield, Higher Self, Connection to Divine",
+				Keywords:      []string{"protection", "shield", "higher self", "connection to divine", "guardian", "safety"},
 			},
 			{
-				Symbol:   "ᛊ",
-				Name:     "Sowilo",
-				Meaning:  "Sun, Success, Wholeness",
-				Keywords: []string{"sun", "success", "wholeness", "victory", "achievement", "light", "power"},
+				Symbol:        "ᛋ",
+				Name:          "Sowilo",
+				Pronunciation: "SO-wee-lo",
+				Meaning:       "Sun, Success, Wholeness, Life Force, Victory",
+				Keywords:      []string{"sun", "success", "wholeness", "life force", "victory", "achievement", "light"},
 			},
 		},
 	}
@@ -136,52 +153,60 @@ var (
 		Name: "Tyr's Aett (Spirituality and Community)",
 		Runes: []Rune{
 			{
-				Symbol:   "ᛏ",
-				Name:     "Tiwaz",
-				Meaning:  "Tyr, Justice, Honor",
-				Keywords: []string{"justice", "honor", "courage", "sacrifice", "tyr", "law", "warrior"},
+				Symbol:        "ᛏ",
+				Name:          "Tiwaz",
+				Pronunciation: "TEE-waz",
+				Meaning:       "Warrior, Justice, Honor, Victory, Tyr the God",
+				Keywords:      []string{"warrior", "justice", "honor", "victory", "tyr", "courage", "sacrifice"},
 			},
 			{
-				Symbol:   "ᛒ",
-				Name:     "Berkano",
-				Meaning:  "Birch, Growth, Fertility",
-				Keywords: []string{"growth", "fertility", "birch", "birth", "nurture", "new beginnings", "renewal"},
+				Symbol:        "ᛒ",
+				Name:          "Berkano",
+				Pronunciation: "BER-kah-no",
+				Meaning:       "Birch, Growth, Renewal, Fertility, New Beginnings",
+				Keywords:      []string{"birch", "growth", "renewal", "fertility", "new beginnings", "birth", "nurture"},
 			},
 			{
-				Symbol:   "ᛖ",
-				Name:     "Ehwaz",
-				Meaning:  "Horse, Movement, Partnership",
-				Keywords: []string{"horse", "movement", "partnership", "trust", "cooperation", "progress", "teamwork"},
+				Symbol:        "ᛖ",
+				Name:          "Ehwaz",
+				Pronunciation: "EH-waz",
+				Meaning:       "Horse, Movement, Progress, Trust, Partnership",
+				Keywords:      []string{"horse", "movement", "progress", "trust", "partnership", "cooperation", "teamwork"},
 			},
 			{
-				Symbol:   "ᛗ",
-				Name:     "Mannaz",
-				Meaning:  "Man, Humanity, Self",
-				Keywords: []string{"humanity", "self", "man", "community", "mind", "intelligence", "social"},
+				Symbol:        "ᛗ",
+				Name:          "Mannaz",
+				Pronunciation: "MAH-naz",
+				Meaning:       "Humanity, Self, Community, Intelligence, Rationality",
+				Keywords:      []string{"humanity", "self", "community", "intelligence", "rationality", "mind", "social"},
 			},
 			{
-				Symbol:   "ᛚ",
-				Name:     "Laguz",
-				Meaning:  "Water, Flow, Intuition",
-				Keywords: []string{"water", "flow", "intuition", "emotion", "psychic", "dreams", "unconscious"},
+				Symbol:        "ᛚ",
+				Name:          "Laguz",
+				Pronunciation: "LAH-gooz",
+				Meaning:       "Water, Flow, Emotions, Intuition, Dreams",
+				Keywords:      []string{"water", "flow", "emotions", "intuition", "dreams", "psychic", "unconscious"},
 			},
 			{
-				Symbol:   "ᛜ",
-				Name:     "Ingwaz",
-				Meaning:  "Ing, Fertility, Completion",
-				Keywords: []string{"fertility", "completion", "ing", "peace", "gestation", "potential", "family"},
+				Symbol:        "ᛜ",
+				Name:          "Ingwaz",
+				Pronunciation: "ING-waz",
+				Meaning:       "Fertility, Potential, Internal Growth, Ing the God",
+				Keywords:      []string{"fertility", "potential", "internal growth", "ing", "peace", "gestation", "family"},
 			},
 			{
-				Symbol:   "ᛞ",
-				Name:     "Dagaz",
-				Meaning:  "Day, Awakening, Breakthrough",
-				Keywords: []string{"day", "awakening", "breakthrough", "transformation", "clarity", "hope", "dawn"},
+				Symbol:        "ᛞ",
+				Name:          "Dagaz",
+				Pronunciation: "DAH-gaz",
+				Meaning:       "Day, Dawn, Breakthrough, Awakening, Transformation",
+				Keywords:      []string{"day", "dawn", "breakthrough", "awakening", "transformation", "clarity", "hope"},
 			},
 			{
-				Symbol:   "ᛟ",
-				Name:     "Othala",
-				Meaning:  "Ancestral Property, Heritage, Home",
-				Keywords: []string{"heritage", "home", "ancestry", "property", "inheritance", "tradition", "family"},
+				Symbol:        "ᛟ",
+				Name:          "Othala",
+				Pronunciation: "OH-thah-lah",
+				Meaning:       "Heritage, Home, Ancestral Property, Legacy, Inheritance",
+				Keywords:      []string{"heritage", "home", "ancestral property", "legacy", "inheritance", "tradition", "family"},
 			},
 		},
 	}
@@ -208,7 +233,8 @@ func displayAllRunes() {
 		fmt.Printf("┌─ %s\n", aett.Name)
 		fmt.Println("│")
 		for _, rune := range aett.Runes {
-			fmt.Printf("│  %s  %-12s  %s\n", rune.Symbol, rune.Name, rune.Meaning)
+			fmt.Printf("│  %s  %-12s (%s)\n", rune.Symbol, rune.Name, rune.Pronunciation)
+			fmt.Printf("│      %s\n", rune.Meaning)
 		}
 		fmt.Println("│")
 	}
@@ -266,7 +292,7 @@ func searchRunes(keyword string) {
 	fmt.Println("╚════════════════════════════════════════════════════════════════════╝\n")
 
 	for _, rune := range matches {
-		fmt.Printf("  %s  %s\n", rune.Symbol, rune.Name)
+		fmt.Printf("  %s  %s (%s)\n", rune.Symbol, rune.Name, rune.Pronunciation)
 		fmt.Printf("      Meaning: %s\n", rune.Meaning)
 		fmt.Printf("      Related: %s\n\n", strings.Join(rune.Keywords, ", "))
 	}
